@@ -10,7 +10,7 @@ from autogen import UserProxyAgent, AssistantAgent
 from autogen.agentchat import GroupChat, GroupChatManager
 
 # === Configure Gemini LLM ===
-GOOGLE_API_KEY = "AIzaSyDDaUTEWZGkEvfT46SVH_qOs_QPQJcHLsg"  # Consider using environment variables for API keys
+GOOGLE_API_KEY = ""  # API key
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
