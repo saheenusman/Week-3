@@ -8,7 +8,7 @@ from autogen.agentchat import GroupChat, GroupChatManager
 import re
 
 # === Gemini Setup ===
-genai.configure(api_key="AIzaSyDDaUTEWZGkEvfT46SVH_qOs_QPQJcHLsg")  # Use env vars in real apps
+genai.configure(api_key="")  # API key
 gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # === Global Shared Context ===
