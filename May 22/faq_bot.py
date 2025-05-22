@@ -15,13 +15,13 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('faq5.log')  # Log to file only
+        logging.FileHandler('faq.log')  # Log to file only
     ]
 )
 logger = logging.getLogger(__name__)
 
 # === Gemini API Setup ===
-GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDDaUTEWZGkEvfT46SVH_qOs_QPQJcHLsg")
+GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY", "") #API key 
 try:
     genai.configure(api_key=GOOGLE_API_KEY)
 except Exception as e:
